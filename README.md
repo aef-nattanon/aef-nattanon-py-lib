@@ -22,17 +22,17 @@ byExample = aef.PhotoExample('coco.names', 'yolov3-tiny.cfg', 'yolov3-tiny.weigh
 byExample.show_by_photo('my-photo.jpeg')
 
 # or 
-import aef_nattanon_py.multiplication as Multiplication
-import aef_nattanon_py.photoExample as PhotoExample
+import aef_nattanon_py.multiplication as multiplication
+import aef_nattanon_py.photoExample as photoExample
 
 
 # Instantiate a Multiplication object
-multiplication = Multiplication(2)
+multiplication = multiplication.Multiplication(2)
 
 # Call the multiply method
 print(multiplication.multiply(5))
 
-byExample = PhotoExample('coco.names', 'yolov3-tiny.cfg', 'yolov3-tiny.weights')
+byExample = photoExample.PhotoExample('coco.names', 'yolov3-tiny.cfg', 'yolov3-tiny.weights')
 byExample.show_by_photo('my-photo.jpeg')
 
 
