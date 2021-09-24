@@ -1,4 +1,3 @@
-
 import unittest
 import math
 from medium_multiply import Multiplication

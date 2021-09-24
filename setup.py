@@ -14,8 +14,8 @@ with open(path.join(HERE, 'README.md'), encoding='utf-8') as f:
 
 # This call to setup() does all the work
 setup(
-    name="aef-nattanon",
-    version="0.0.1",
+    name="aef-nattanon-py",
+    version="0.1.0",
     description="Demo library",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -34,7 +34,7 @@ setup(
         "Programming Language :: Python :: 3.9",
         "Operating System :: OS Independent"
     ],
-    packages=["medium_multiply"],
+    packages=["medium_multiply", "my_example"],
     include_package_data=True,
-    install_requires=["numpy"]
+    install_requires=["numpy", "opencv-python"]
 )

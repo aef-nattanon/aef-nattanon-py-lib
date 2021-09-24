@@ -1,1 +1,4 @@
 .idea
+./dist
+./build
+./aef_nattanon_py.egg-info
