@@ -1,8 +1,8 @@
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 # Import Multiplication from your library
-from medium_multiply.multiplication import Multiplication
-from my_example.photoExample import PhotoExample
 
+from aef_nattanon_py.multiplication import Multiplication
+from aef_nattanon_py.photoExample import PhotoExample
 
 if __name__ == '__main__':
     byExample = PhotoExample('coco.names', 'yolov3-tiny.cfg', 'yolov3-tiny.weights')

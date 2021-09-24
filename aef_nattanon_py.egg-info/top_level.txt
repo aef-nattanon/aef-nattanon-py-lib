@@ -1,2 +1,0 @@
-medium_multiply
-my_example

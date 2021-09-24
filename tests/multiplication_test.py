@@ -1,6 +1,6 @@
 import unittest
 import math
-from medium_multiply import Multiplication
+from aef_nattanon_py.medium_multiply import Multiplication
 
 
 class MultiplicationTestCase(unittest.TestCase):
