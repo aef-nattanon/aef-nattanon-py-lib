@@ -19,7 +19,7 @@ setup(
     description="Demo library",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://medium-multiply.readthedocs.io/",
+    url="https://aef-nattanon-py-lib.readthedocs.io/",
     author="Nattanon Saetan",
     author_email="example@email.com",
     license="MIT",
