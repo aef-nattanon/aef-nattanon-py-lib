@@ -1,2 +1,0 @@
-from aef_nattanon_py.photoExample import PhotoExample
-from aef_nattanon_py.multiplication import Multiplication
