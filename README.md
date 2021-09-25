@@ -1,4 +1,5 @@
 # aef-nattanon-py-lib
+[![Documentation Status](https://readthedocs.org/projects/aef-nattanon-py-lib/badge/?version=latest)](https://aef-nattanon-py-lib.readthedocs.io/en/latest/?badge=latest)
 ## Install
 
 ```bash
