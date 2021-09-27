@@ -33,4 +33,15 @@ while True:
 
 cv2.destroyAllWindows()
 
+# YoloV3Director
+myDirector = aef.YoloV3Director()
+cap = cv2.VideoCapture(0)
+while True:
+    _, frame = cap.read()
+    myDirector.direct_by_frame(frame)
+    cv2.imshow("Image", myDirector.director_img)
+    cv2.waitKey(1)
+
+cv2.destroyAllWindows()
+
 ```
