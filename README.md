@@ -6,6 +6,7 @@
 $ pip install aef-nattanon-py
 ```
 
+![Demo](./docs/demo.gif)
 ## Simple Demo
 
 ```python
