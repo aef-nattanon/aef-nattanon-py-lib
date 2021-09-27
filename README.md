@@ -19,28 +19,28 @@ multiplication = aef.Multiplication(2)
 print(multiplication.multiply(5)) # 10
 
 # direct_by_img_path
-myDirector = aef.Director('coco.names', 'yolov3-tiny.cfg', 'yolov3-tiny.weights')
-myDirector.direct_by_img_path('my-photo.jpeg')
-cv2.imshow("Image", myDirector.director_img)
+myDetector = aef.Detector('coco.names', 'yolov3-tiny.cfg', 'yolov3-tiny.weights')
+myDetector.detact_by_img_path('my-photo.jpeg')
+cv2.imshow("Image", myDetector.detect_img)
 cv2.waitKey(100)
 
 # direct_by_frame
 cap = cv2.VideoCapture(0)
 while True:
     _, frame = cap.read()
-    myDirector.direct_by_frame(frame)
-    cv2.imshow("Image", myDirector.director_img)
+    myDetector.detact_by_frame(frame)
+    cv2.imshow("Image", myDetector.detect_img)
     cv2.waitKey(1)
 
 cv2.destroyAllWindows()
 
 # YoloV3Director
-myDirector = aef.YoloV3Director()
+myDetector = aef.YoloV3Detector()
 cap = cv2.VideoCapture(0)
 while True:
     _, frame = cap.read()
-    myDirector.direct_by_frame(frame)
-    cv2.imshow("Image", myDirector.director_img)
+    myDetector.detect_by_frame(frame)
+    cv2.imshow("Image", myDetector.detect_img)
     cv2.waitKey(1)
 
 cv2.destroyAllWindows()

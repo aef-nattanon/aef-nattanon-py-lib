@@ -1,8 +1,8 @@
-from aef_nattanon_py.director import Director
+from aef_nattanon_py.detector import Detector
 import os
 
 
-class YoloV3Director(Director):
+class YoloV3Detector(Detector):
 
     def __init__(self):
         path_s = os.path.dirname(__file__)

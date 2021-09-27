@@ -2,10 +2,10 @@ import cv2
 import numpy as np
 
 
-class Director:
+class Detector:
 
     def __init__(self, classes_file='', model_configuration='', model_weights=''):
-        self.director_img = ''
+        self.detect_img = ''
         self.class_ids = []
         self.classes = []
         self.labels = []
@@ -19,10 +19,10 @@ class Director:
         with open(classes_file, "r") as f:
             self.classes = [line.strip() for line in f.readlines()]
 
-    def direct_by_img_path(self, photo):
-        self.direct_by_frame(cv2.imread(photo))
+    def detect_by_img_path(self, photo):
+        self.detect_by_frame(cv2.imread(photo))
 
-    def direct_by_frame(self, frame):
+    def detect_by_frame(self, frame):
         # Load Yolo
         net = cv2.dnn.readNet(self.modelWeights, self.modelConfiguration)
 
@@ -70,5 +70,5 @@ class Director:
                 color = colors[i]
                 cv2.rectangle(frame, (x, y), (x + w, y + h), color, 3)
                 cv2.putText(frame, self.labels[i], (x, y-20), font, 2, color, 3)
-        self.director_img = frame
-        return self.director_img, self.labels, self.classes, self.class_ids, self.boxes
+        self.detect_img = frame
+        return self.detect_img, self.labels, self.classes, self.class_ids, self.boxes
