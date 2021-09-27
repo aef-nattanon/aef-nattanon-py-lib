@@ -15,7 +15,7 @@ with open(path.join(HERE, 'README.md'), encoding='utf-8') as f:
 # This call to setup() does all the work
 setup(
     name="aef-nattanon-py",
-    version="0.2.1",
+    version="0.2.2",
     description="Detector library",
     long_description=long_description,
     long_description_content_type="text/markdown",
@@ -37,5 +37,5 @@ setup(
     packages=["aef_nattanon_py"],
     package_data={'aef_nattanon_py': ['files/*']},
     include_package_data=True,
-    install_requires=["numpy", "opencv-python", "os"]
+    install_requires=["numpy", "opencv-python"]
 )
