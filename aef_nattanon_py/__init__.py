@@ -1,3 +1,3 @@
-from aef_nattanon_py.detector import Director
+from aef_nattanon_py.detector import Detector
 from aef_nattanon_py.multiplication import Multiplication
-from aef_nattanon_py.yolov3detector import YoloV3Director
+from aef_nattanon_py.yolov3detector import YoloV3Detector
